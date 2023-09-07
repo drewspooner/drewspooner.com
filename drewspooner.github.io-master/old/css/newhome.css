@@ -1,0 +1,240 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    background-color: whitesmoke;
+}
+
+.content{
+    margin: auto;
+    padding: auto;
+    align-content: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Skill Bar Tutorial from w3schools
+    https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+
+*{box-sizing:content-box}
+
+.container{
+    width=100%;
+    background-color: #ddd;
+}
+
+.nameheader{
+    font-weight: 800;
+    font-size: 2.3em;
+    letter-spacing: normal;
+    color: Black;
+}
+
+.introsec{
+    padding-bottom: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .introtext{
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    body{
+        margin: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .introtext{
+        width: 75%;
+    }
+}
+    
+    
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+@keyframes expand40{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+@keyframes expand60{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+@keyframes expand70{
+        0%{width: 0%;}
+        100%{width: 70%;}
+    }
+@keyframes expand80{
+        0%{width: 0%;}
+        100%{width: 80%;}
+    }
+@keyframes expand90{
+        0%{width: 0%;}
+        100%{width: 90%;}
+    }
+.cpp {
+    width: 70%; 
+    background-color: #fbc93d;
+    animation-name: expand70;
+    animation-duration: 1.5s;
+}
+.psd {
+    width: 90%; 
+    background-color: #6cc0e5;
+    animation-name: expand90;
+    animation-duration: 1.5s;
+}
+.sql {
+    width: 40%; 
+    background-color: #fbc93d;
+    animation-name: expand40;
+    animation-duration: 1.5s;
+}
+.indd {
+    width: 80%; 
+    background-color: #ff7034;
+    animation-name: expand80;
+    animation-duration: 1.5s;
+}
+.java {
+    width: 70%; 
+    background-color: #fb4f4f;
+    animation-name: expand70;
+    animation-duration: 1.5s;   
+}
+
+.webd {
+    width: 60%; 
+    background-color: #fb4f4f;
+    animation-name: expand60;
+    animation-duration: 1.5s;   
+}
+
+.sec{
+    margin-bottom: 3em;
+}
+
+.rtitle{
+    font-size: 30pt;
+    padding: 1em;
+    text-align: center;
+    color: black;
+}
+
+.titleh{
+    color: black;
+    font-size: 108%;
+    margin-bottom: .5em;
+}
+.subtitle{
+    padding: -1em;
+    margin: 0.2em 1em 0.2em 1em;
+    color: #b9b9b9;
+}
+
+.content{
+        margin: auto;
+        padding: auto;
+        align-content: center;
+        width: 100%;
+    }
+
+/* Skill Bar Tutorial from w3schools
+    https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+
+*{box-sizing:content-box}
+
+.container{
+    width=100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.cpp {
+    width: 70%; 
+    background-color: #fbc93d;
+}
+.psd {
+    width: 90%; 
+    background-color: #6cc0e5;
+
+}
+.sql {
+    width: 40%; 
+    background-color: #fbc93d;
+}
+.indd {
+    width: 80%; 
+    background-color: #ff7034;
+}
+.java {
+    width: 70%; 
+    background-color: #fb4f4f; 
+}
+
+.webd {
+    width: 60%; 
+    background-color: #fb4f4f;  
+}
+
+.sec{
+    margin-bottom: 3em;
+}
+
+.rtitle{
+    font-size: 30pt;
+    padding: 1em;
+    text-align: center;
+}
+
+.titleh{
+    color: black;
+    font-size: 108%;
+    margin-bottom: .5em;
+}
+.subtitle{
+    padding: -1em;
+    margin: 0.2em 1em 0.2em 1em;
+    color: #5f5f5f;
+}
+
+.century{
+    color: navy;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fishCamp{
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rec{
+    color: #500000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29);
+}
+
+.red{
+    color: #fb4f4f;
+}

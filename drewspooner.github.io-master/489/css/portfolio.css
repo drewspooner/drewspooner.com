@@ -1,0 +1,118 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 3em;
+}
+
+.column{
+    flex: 30%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.pbuttons{
+    text-align: center;
+    padding: 2em 1em 1em 1em;
+}
+
+.pbuttons button{
+    font-family: "Fjolla One", "Rubik", sans-serif;
+    font-weight: 100;
+    border-top: 0px;
+    border-right: 0px;
+    font-size: 1em;
+    box-shadow: -3px 3px rgba(11, 11, 11, 0.16);
+    color: white;
+    padding: .6em;
+    display: inline-flex;
+}
+
+.behance{
+    border-radius: 4px;
+    background-color: #00d8ff;
+    border-left: 4px solid #76eaff;
+    border-bottom: 4px solid #0090aa;
+}
+
+.behance:hover{
+    background-color: #00a8c6;
+    font-size: 107%;
+}
+
+.upwork{
+    border-radius: 4px;
+    background-color: #00bf33;
+    border-left: 4px solid #63cb7e;
+    border-bottom: 4px solid #019027;
+}
+
+.upwork:hover{
+    background-color: #00a72d;
+    font-size: 107%;
+}
+
+.gen{
+    border-radius: 4px;
+    background-color: #aa7dff;
+    border-left: 4px solid #cbb6f2;
+    border-bottom: 4px solid #8663c7;
+}
+
+.gen:hover{
+    background-color: #9b75e3;
+    font-size: 107%;
+}
+
+.backed{
+    background-color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    font-size: 120%;
+    padding: 1em;
+}
+
+/* using tooltip guide from https://stackoverflow.com/questions/11716916/tooltip-on-image */
+.tool{
+    position: relative;
+    display: inline-block;
+}
+
+.tool .tooltext{
+    visibility: hidden;
+    width: 300px;
+    background-color: #aa7dff;
+    border-left: 4px solid #cbb6f2;
+    border-bottom: 4px solid #8663c7;
+    text-align: center;
+    padding: 5px 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.tool:hover .tooltext{
+    visibility: visible;
+    font-family: "Fjolla One", "Rubik", sans-serif;
+    color: white;
+    font-size: 110%;
+}

@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Drew Spooner</title>
+<link href="css/menubar.css" rel="stylesheet" >
+    <link href="css/portfolio.css" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+
+<!--Guide on how to make menu disappear/reappear https://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript -->
+<script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+</script>
+
+    
+</head>
+    <input class="navtoggle" type="button" name="answer" value="☰ Menu" onclick="showDiv()" >
+    <div class="menuwrapper" id="mw">
+        <nav id="menubar">
+            <div id="menu1" class="menu">
+                <a href="index.html">Home</a>
+                
+            </div>  <!-- menu1 -->
+
+            <div id="menu2" class="menu">
+                <a href="resume.html">Resume</a>
+            </div>  <!-- menu2 -->
+
+            <div id="menu3" class="menu">
+                <a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <a href="program.html"><li>Software Projects</li></a>
+                    <li><a href="portfolio.html">Design</a>
+                        <ul>
+                            <a href="marketing.html"><li>Marketing</li></a>
+                            <a href="lowpoly.html"><li>Low-Poly</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </div>
+    <div class="pbuttons">
+        <a href="https://www.behance.net/drewhspooner" target ="_blank" ><button class="behance">Behance</button></a>
+        <a href="https://www.upwork.com/freelancers/~01641d4135104f9f05" target="_blank"><button class="upwork">Upwork</button></a>
+        <a href="lowpoly.html" ><button class="gen">Low-Poly Series</button></a>
+        <a href="marketing.html" ><button class="gen">Marketing & Branding</button></a>
+        <a href="program.html" ><button class="gen">Software Projects</button></a>
+    </div>
+    <!-- Using responsive image guide from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
+    
+    <div class="row">
+        <div class="column">
+            <div class="tool"><img src="img/gal7.jpg"><span class="tooltext">Low-poly portrait of Chance the Rapper</span></div>
+            <div class="tool"><img src="img/gal4.jpg"><span class="tooltext">Hypothetical event poster design for Polygonawonaland Festival</span></div>
+            <div class="tool"><img src="img/gal3.jpg"><span class="tooltext">Rec Sports Brand Integration with Park West Life</span></div>
+        </div>
+        <div class="column">
+            <div class="tool"><img src="img/gal2.jpg"><span class="tooltext">Rec Sports exercise program social media post</span></div>
+            <div class="tool"><img src="img/gal5.png"><span class="tooltext">Mock ad design for Nike FreeRunner</span></div>
+            <div class="tool"><img src="img/gal6.jpg"><span class="tooltext">Mockup Flyer design for Climbing Event</span></div>
+        </div>
+        <div class="column">
+            <div class="tool"><img src="img/gal1.png"><span class="tooltext">Logo design for Rec Center special social media event</span></div>
+            <div class="tool"><img src="img/gal8.jpg"><span class="tooltext">Low-poly portrait of Jon Bellion</span></div>
+            <div class="tool"><img src="img/gal9.jpg"><span class="tooltext">Low-poly portrait of Sameer Gadhia of Young the Giant</span></div>
+        </div>
+    </div>
+
+
+</html>

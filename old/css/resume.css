@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.content{
+    margin: auto;
+    padding: auto;
+    align-content: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Skill Bar Tutorial from w3schools
+    https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+
+    *{box-sizing:content-box}
+    
+    .container{
+        width=100%;
+        background-color: #ddd;
+    }
+    
+    .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    @keyframes expand40{
+        0%{width: 0%;}
+        100%{width: 40%;}
+    }
+    @keyframes expand60{
+        0%{width: 0%;}
+        100%{width: 60%;}
+    }
+    @keyframes expand70{
+            0%{width: 0%;}
+            100%{width: 70%;}
+        }
+    @keyframes expand80{
+            0%{width: 0%;}
+            100%{width: 80%;}
+        }
+    @keyframes expand90{
+            0%{width: 0%;}
+            100%{width: 90%;}
+        }
+    .cpp {
+        width: 70%; 
+        background-color: #fbc93d;
+        animation-name: expand70;
+        animation-duration: 1.5s;
+    }
+    .psd {
+        width: 90%; 
+        background-color: #6cc0e5;
+        animation-name: expand90;
+        animation-duration: 1.5s;
+}
+    .sql {
+        width: 40%; 
+        background-color: #fbc93d;
+        animation-name: expand40;
+        animation-duration: 1.5s;
+}
+    .indd {
+        width: 80%; 
+        background-color: #ff7034;
+        animation-name: expand80;
+        animation-duration: 1.5s;
+}
+    .java {
+        width: 70%; 
+        background-color: #fb4f4f;
+        animation-name: expand70;
+        animation-duration: 1.5s;   
+}
+
+    .webd {
+        width: 60%; 
+        background-color: #fb4f4f;
+        animation-name: expand60;
+        animation-duration: 1.5s;   
+}
+
+.sec{
+    margin-bottom: 3em;
+}
+
+.rtitle{
+    font-size: 30pt;
+    padding: 1em;
+    text-align: center;
+}
+
+.titleh{
+    color: white;
+    font-size: 108%;
+    margin-bottom: .5em;
+}
+.subtitle{
+    padding: -1em;
+    margin: 0.2em 1em 0.2em 1em;
+    color: #b9b9b9;
+}

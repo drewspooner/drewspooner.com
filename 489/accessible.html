@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/newhome.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/menubar.css" rel="stylesheet" >
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+    
+    <style>
+        img{
+            max-width: 100%;
+        }
+        
+        img:hover{
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.53);
+        }
+        
+        .content{
+            padding-bottom: 5em;
+        }
+        
+        .exlink{
+            padding: 1em;
+        }
+    
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+    <script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+    </script>
+
+    <title>Accessible Site - Spooner</title>
+    </head>
+    
+    <ul>
+        <li><a href="index.html" class="fishcamp">Back to 489 Home</a></li>
+    </ul>
+    
+    <div  class="content">
+        <img src="dice.jpg" alt="Picture of a set of dungeons and dragons polygonal dice on a gray table with a box to hold them. ">
+        <h1 class="nameheader">How to Start Playing Dungeons and Dragons</h1>
+        
+        <h2 class="nameheader">Why should I start?</h1>
+        <p class="introtext">Dungeons and Dragons is one of the most popular and well known tabletop roleplaying game. There is a low barrier to entry, and it can be enjoyed by anyone! There are a clear structure of rules to guide players, however there is plenty of room for creativity!</p>
+        <hr>
+        <h2 class="nameheader">How do I get started?</h2>
+        <p class="introtext">All you really need to start is paper, pencils, dice (which can be physical or found online) and a good attitude. Basic free rule sets and adventures can be found online for anyone to use!</p>
+        <ul>
+            <li><a href="https://www.amazon.com/Smartdealspro-Colors-Dungeons-Dragons-Pouches/dp/B01ABST9S4/ref=sr_1_4_sspa?dchild=1&keywords=dice&qid=1616449167&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySUM1VFozNUlCNVFRJmVuY3J5cHRlZElkPUEwMzMwNTE3Mk5JTFFBNTFMNTk2TyZlbmNyeXB0ZWRBZElkPUExMDE3MjUyMlY0SEhaNE9DTkhXMSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="blank">Starter Dice Kit (Amazon)</a></li>
+            <li><a href="https://dnd.wizards.com/articles/features/basicrules" target="blank">Basic Rules (Free)</a></li>
+            <li><a href="https://www.amazon.com/dungeons-dragons-starter-set-roleplaying/dp/0786965592/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=emilypolygon-20&linkId=7ffd2f10226f5c3ef76ffd976dbdee2e" target="blank">Starter Set (Amazon)</a></li>
+        </ul>
+        <hr>
+        <h2 class="nameheader">How do I create a character?</h2>
+        <p class="introtext">There are a limited number of classes, character races, backgrounds, and personality traits, however there are an insanely large number of combinations and an unlimited number of backstories to create for your character. This may seem intimidating, however, a good way to start is to pick your favorite fictional hero and try to create a character that matches them. Once you have experience with that method of character creation, you can more easily start building your own more original characters.</p>
+        <ul>
+            <li><a href="https://dnd.wizards.com/classes" target="_blank">All Classes for Character Creation</a></li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8ziZelSz8J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div class="exlink"><button class="github" id="hide">View Audio Description</button></div>
+            
+            <script>
+            $(document).ready(function() {
+                $('#resumeSec').fadeToggle(0);
+            });
+            
+            $('#hide').click(function(){
+                var resButton = new $('#hide').text();
+                if (resButton == "Hide Audio Description"){
+                    $('#hide').text("View Audio Description");
+                } else{
+                    $('#hide').text("Hide Audio Description");
+                }
+                
+                $('#resumeSec').fadeToggle('fast');
+            });
+            
+        </script>
+        
+        <div id="resumeSec">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XQ30vxtW5lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <hr>
+        <h2 class="nameheader">What are some other helpful resources?</h2>
+        <p class="introtext">Here are some links to other resources which can help new and experienced players.</p>
+        <ul>
+            <li><a href="https://www.reddit.com/r/dndnext/wiki/resourcelist#wiki_free_official_adventures" target="_blank">Free Adventures</a></li>
+            <li><a href="https://www.reddit.com/r/dndnext/wiki/resourcelist#wiki_character_creation" target="_blank">Character Creation</a></li>
+            <li><a href="https://dnd.wizards.com/" target="_blank">D&D Official Homepage</a></li>
+        </ul>
+       <hr>
+        <form>
+              <form action="/">
+                <h2>Contact Me!</h2>
+                <div class="info">
+                  <input class="fname" type="text" name="name" placeholder="Full name"><br>
+                  <input type="text" name="name" placeholder="Email"><br>
+                  <input type="text" name="name" placeholder="Phone number"><br>
+                  <input type="text" name="name" placeholder="Website"><br>
+                </div>
+                <p>Message</p>
+                <div>
+                  <textarea rows="4"></textarea>
+                </div>
+                <button type="submit" href="/">Submit</button>
+              </form>
+    </div>
+        </form>
+    </div>
+    
+</html>

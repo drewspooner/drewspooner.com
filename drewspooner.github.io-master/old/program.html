@@ -1,0 +1,116 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Drew Spooner</title>
+<link href="css/menubar.css" rel="stylesheet" >
+    <link href="css/resume.css" rel="stylesheet" >
+<link href="css/program.css" rel="stylesheet" >
+    <link href="css/resume.css" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+
+<!--Guide on how to make menu disappear/reappear https://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript -->
+<script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+</script>
+
+    
+</head>
+    <input class="navtoggle" type="button" name="answer" value="☰ Menu" onclick="showDiv()" >
+    <div class="menuwrapper" id="mw">
+        <nav id="menubar">
+            <div id="menu1" class="menu">
+                <a href="index.html">Home</a>
+                
+            </div>  <!-- menu1 -->
+
+            <div id="menu2" class="menu">
+                <a href="resume.html">Resume</a>
+            </div>  <!-- menu2 -->
+
+            <div id="menu3" class="menu">
+                <a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <a href="program.html"><li>Software Projects</li></a>
+                    <li><a href="portfolio.html">Design</a>
+                        <ul>
+                            <a href="marketing.html"><li>Marketing</li></a>
+                            <a href="lowpoly.html"><li>Low-Poly</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </div>
+    
+    <
+    
+    <div class="content">
+        <div class="pbuttons">
+            <a href="portfolio.html" ><button class="gen">Back to main gallery</button></a>
+        </div>
+        
+        <h1 class="rtitle">Software Projects</h1>
+        
+        <div class="sec">
+        <p class="titleh">NCAA Player Search (SQL & Java): </p>
+            <p class="subtitle">Using a database of thorough NCAA statistics, our team built a GUI application which had features such as a player search, calculated the statistical rival of a team, and found victory chains. One of my major contributions was a homefield advantage calculation algorithm, which evaluated a team’s relative performance at home and overall which objectively determined if a team has a homefield advantage.</p>
+            <div class="row">
+                <div class="column">    
+                    <img class="thumb" src="img/gui1.JPG">
+                    <img class="thumb" src="img/gui2.JPG">
+                    <img class="thumb" src="img/gui3.JPG">
+                </div>
+                <div class="column">   
+                    <img class="thumb" src="img/gui4.JPG">
+                    <img class="thumb" src="img/gui5.JPG">
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div class="sec">
+        <p class="titleh">Nine To Five Job Search Site (HTML, CSS, Javascript): </p>
+            <p class="subtitle">Compiles data from job boards, glassdoor, and LinkedIn to provide a more catered search for internships, specifically within software engineering. Additionally, this site sources a list of intern program cancellations due to COVID. I built most of the UI/UX of the site, while also building some of the API requests. </p>
+            <div class="balign">
+            <a  href="https://github.com/drewspooner/jobsearch" target ="_blank" ><button class="behance">Site Design.</button></a>
+            <a  href="https://github.com/drewspooner/COVIDJobBoard" target ="_blank" ><button class="behance">Code Repo.</button></a></div>
+            
+        </div>
+    
+    
+        <div class="sec">
+        <p class="titleh">Question Ball (HTML, CSS, Javascript): </p>
+            <p class="subtitle">Simple question ball site used by college orientation leaders to break the ice with freshmen during new online programs. Generates a random question from a user defined array. </p>
+            <div class="balign">
+            <a  href="questionball.html" target ="_blank" ><button class="behance">See The Project.</button></a></div>
+            
+        </div>
+    
+        <div class="sec">
+        <p class="titleh">Sarge Bot (Java, HTML, CSS): </p>
+            <p class="subtitle">GroupMe chat bot for class/group management. Currently a work in progress for CSCE 445 at Texas A&M. </p>
+            <div class="balign">
+            <a  href="https://github.com/espartin21/sarge-gmbot" target ="_blank" ><button class="behance">Code Repo.</button></a>
+            <a  href="/SargeBot/index.html" target ="_blank" ><button class="behance">Front End Concept.</button></a></div>
+            
+        </div>
+        
+        
+    </div>
+
+
+</html>

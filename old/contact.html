@@ -1,0 +1,56 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Drew Spooner</title>
+<link href="css/menubar.css" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+
+<!--Guide on how to make menu disappear/reappear https://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript -->
+<script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+</script>
+
+    
+</head>
+    <input class="navtoggle" type="button" name="answer" value="☰ Menu" onclick="showDiv()" >
+    <div class="menuwrapper" id="mw">
+        <nav id="menubar">
+            <div id="menu1" class="menu">
+                <a href="index.html">Home</a>
+                
+            </div>  <!-- menu1 -->
+
+            <div id="menu2" class="menu">
+                <a href="resume.html">Resume</a>
+            </div>  <!-- menu2 -->
+
+            <div id="menu3" class="menu">
+                <a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <a href="program.html"><li>Software Projects</li></a>
+                    <li><a href="portfolio.html">Design</a>
+                        <ul>
+                            <a href="marketing.html"><li>Marketing</li></a>
+                            <a href="lowpoly.html"><li>Low-Poly</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </div>
+
+
+</html>

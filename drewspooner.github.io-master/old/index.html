@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/newhome.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/menubar.css" rel="stylesheet" >
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+
+<title>Drew Spooner</title>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+    <script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+    </script>
+    
+
+
+    <input class="navtoggle" type="button" name="answer" value="☰ Menu" onclick="showDiv()" >
+    <div class="menuwrapper" id="mw">
+        <nav id="menubar">
+            <div id="menu1" class="menu">
+                <a href="index.html">Home</a>
+                
+            </div>  <!-- menu1 -->
+
+            <div id="menu2" class="menu">
+                <a href="resume.html">Resume</a>
+            </div>  <!-- menu2 -->
+
+            <div id="menu3" class="menu">
+                <a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <a href="program.html"><li>Software Projects</li></a>
+                    <li><a href="portfolio.html">Design</a>
+                        <ul>
+                            <a href="marketing.html"><li>Marketing</li></a>
+                            <a href="lowpoly.html"><li>Low-Poly</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </div>
+    
+    <div  class="content">
+        <h1 class="nameheader">Drew Spooner</h1>
+        
+        <div class="introsec">
+        <p class="introtext">
+        <b><em>Hi! I'm Drew!</em></b>
+        </p>
+        
+        <p class="introtext">
+        I am a senior Computer Science student at Texas A&M. I currently serve as a chairperson for <a href="http://fishcamp.tamu.edu/" target="_blank" class="fishCamp">Fish Camp</a>, which is the largest student-run orientation program in the nation. Additionally, I coordinate community service for <a href="http://tamucenturymen.com" target="_blank" class="century">Century Men's Society</a> and produce marketing content for <a href="http://recsports.tamu.edu" target="_blank" class="rec">Texas A&M Rec Sports</a>. 
+        </p>
+            
+        <p class="introtext">
+        Currently, I am seeking both a Spring 2021 co-op and a 2021 summer internship. My career interests include both front end development and software engineering in general.
+            
+        </p>
+        </div>
+        
+        <div class="exlink" style="text-align:center"><button class="github" id="hide">View Resume</button>
+        <a href="img/SpoonerDrewResume.pdf" target="_blank"><button class="redb" id="hide">Resume PDF</button></a>
+        </div>
+        
+        
+        
+        
+        <script>
+            $(document).ready(function() {
+                $('#resumeSec').fadeToggle(0);
+            });
+            
+            $('#hide').click(function(){
+                var resButton = new $('#hide').text();
+                if (resButton == "View Resume"){
+                    $('#hide').text("Hide Resume");
+                } else{
+                    $('#hide').text("View Resume");
+                }
+                
+                $('#resumeSec').fadeToggle('fast');
+            });
+            
+        </script>
+        
+        <div id="resumeSec">
+        <div class="sec">
+        <h2>Education</h2>
+        <div class="entry">
+        <p class="titleh"><b>Texas A&M University</b> | College Station, Texas</p>
+        <p class="subtitle"> December 2021</p>
+        <p class="subtitle"> Bachelor of Arts in Computing, Minor in Art & New Media</p>
+        <p class="subtitle"> GPA: 3.30/4.0</p>
+        </div>
+        </div>
+        
+       
+        <div class="exlink">
+                <a href="https://www.behance.net/drewhspooner" target ="_blank" ><button class="behance">Design Portfolio</button></a>
+                <a href="program.html" target="_blank"><button class="upwork">Software Projects</button></a>
+                <a href="https://github.com/drewspooner" target="_blank"><button class="github">Github</button></a>
+            </div>
+        
+       
+        <div class="sec">
+        <h2>Skills</h2>
+        <p> C++</p>
+          <div class="container">
+            <div class="skills cpp"></div>
+          </div>
+
+        <p> Java</p>
+          <div class="container">
+            <div class="skills java"></div>
+          </div>
+
+        <p> Photoshop</p>
+          <div class="container">
+            <div class="skills psd"></div>
+          </div>
+
+        <p> InDesign</p>
+          <div class="container">
+            <div class="skills indd"></div>
+          </div>
+
+        <p> SQL </p>
+          <div class="container">
+            <div class="skills SQL"></div>
+          </div>
+
+        <p> HTML & CSS </p>
+          <div class="container">
+            <div class="skills webd"></div>
+          </div>
+
+        </div>
+          
+        <div class="sec">
+        <h2>Experience</h2>
+        <div class="entry">
+        <p class="titleh"><b>Texas A&M Rec Sports</b> | College Station, Texas</p>
+        <p class="subtitle"> <i>Graphic Layout Artist</i></p>
+        <p class="subtitle"> August 2019 - Current</p>
+        <ul class="subtitle">
+            <li>Design promotional materials for the Student Recreation Center marketing department
+            </li>
+            <li>Collaborate with other marketing team members on special projects and events</li>
+            </ul>
+        </div>
+          
+        <div class="entry">
+        <p class="titleh"><b>TBarM Camps</b> | New Braunfels, Texas</p>
+        <p class="subtitle"> <i>Counselor/Challenge Course Operator</i></p>
+        <p class="subtitle"> June 2016 – August 2018</p>
+        <ul class="subtitle">
+            <li>Led camp activities in order to create a fun, safe environment where campers felt encouraged to face personal growth
+            </li>
+            <li>Operated high ropes course activities according to national challenge course safety guidelines</li>
+            </ul>
+        </div>
+        </div>
+        
+        <div class="sec">
+        <h2>Leadership</h2>
+        <div class="entry">
+        <p class="titleh"><b>Fish Camp</b> | Texas A&M University</p>
+        <p class="subtitle"> <i>Chairperson</i></p>
+        <p class="subtitle"> November 2019 - Current</p>
+        <ul class="subtitle">
+            <li>Lead and mentor a group of 24 counselors through counselor trainings and their camp experience
+            </li>
+            <li>Selected from a competitive pool of applicants for the largest student-run college orientation program</li>
+            <li>Designs remote training programs for members due to national pandemic</li>
+            </ul>
+        </div>
+          
+        <div class="entry">
+        <p class="titleh"><b>Century Men's Society</b> | Texas A&M University</p>
+        <p class="subtitle"> <i>Service Officer</i></p>
+        <p class="subtitle"> November 2019 - Current</p>
+        <ul class="subtitle">
+            <li>Facilitate organization-wide community service in the Bryan & College Station area and beyond
+            </li>
+            <li>Awarded the title of “Rookie of the Year” for outstanding fundraising and community service efforts</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+</html>
+
+
+    
+
+</html>

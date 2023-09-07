@@ -1,0 +1,84 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Drew Spooner</title>
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/menubar.css" rel="stylesheet" >
+    
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+
+<!--Guide on how to make menu disappear/reappear https://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript -->
+<script>
+    var x = new Boolean(true);
+    function showDiv() {
+        if(x){
+            document.getElementById('mw').style.display = "block";
+            x=false;
+        }
+        else{
+            document.getElementById('mw').style.display = "none";
+            x= true;
+        }
+    }
+</script>
+
+    
+</head>
+    <input class="navtoggle" type="button" name="answer" value="☰ Menu" onclick="showDiv()" >
+    <div class="menuwrapper" id="mw">
+        <nav id="menubar">
+            <div id="menu1" class="menu">
+                <a href="index.html">Home</a>
+                
+            </div>  <!-- menu1 -->
+
+            <div id="menu2" class="menu">
+                <a href="resume.html">Resume</a>
+            </div>  <!-- menu2 -->
+
+            <div id="menu3" class="menu">
+                <a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <a href="program.html"><li>Software Projects</li></a>
+                    <li><a href="portfolio.html">Design</a>
+                        <ul>
+                            <a href="marketing.html"><li>Marketing</li></a>
+                            <a href="lowpoly.html"><li>Low-Poly</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </div>
+    
+    <div class="loadin"></div>
+    
+    <div class="banner">
+        <div class="bannerov">   
+            <h1>Drew Spooner</h1>
+            <div>
+            <img class="profilepic" src="img/profile.png">
+            </div>
+            <div class="exlink">
+                <a href="https://www.behance.net/drewhspooner" target ="_blank" ><button class="behance">Behance</button></a>
+                <a href="https://www.upwork.com/freelancers/~01641d4135104f9f05" target="_blank"><button class="upwork">Upwork</button></a>
+                <a href="https://github.com/drewspooner" target="_blank"><button class="github">Github</button></a>
+            </div>
+            <div class="about">
+            <h2>About Me</h2>
+            <p>
+             I am a junior Computing major born and raised in Austin, Texas. Growing up, I had an early fascination with computers and technology, as my father is a software engineer and always had brought some of his work home with him. As a kid, when my teachers asked me what I wanted to be when I grew up, I always said I wanted to be an inventor, although I can honestly say I had no idea what that meant at the time. When I reached high school, I ended up taking a computer science class and immediately began to take an interest in the field. Simultaneously, I also discovered photoshop and began to take another interest within the field of Graphic Design. This ultimately culminated in my current studies at Texas A&M, which are computer science and graphic design, as my major allows me to place emphasis on my art minor.    
+            </p>
+            </div>
+        </div>
+        <img src="" class="bannerimg">
+        
+    
+    </div>
+
+
+</html>
