@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+.effects {
+  @apply transition-all duration-500 ease-out cursor-default
+}
+
+.effects:hover{
+  @apply scale-110
+}
