@@ -18,7 +18,7 @@ const experience = [
     role: "Software Engineer, Basketball Products",
     dates: "October 2025 – Present",
     bullets: [
-      "Building software products on the Basketball Products team in support of player development, analytics, and basketball operations.",
+      "Building on the Basketball Products team.",
     ],
   },
   {
