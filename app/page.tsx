@@ -16,7 +16,7 @@ const experience = [
     company: "New York Knicks / Madison Square Garden Sports Corp",
     location: "New York, NY",
     role: "Software Engineer, Basketball Products",
-    dates: "October 2025 – Present",
+    dates: "September 2025 – Present",
     bullets: [
       "Building on the Basketball Products team.",
     ],
